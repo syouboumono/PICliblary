@@ -1,3 +1,9 @@
+#ifndef _PIC16F1829_CONFIG_H
+#define _PIC16F1829_CONFIG_H
+
+#include <pic16f1829.h>
+#include <xc.h>
+
 // #pragma config statements should precede project file includes.
 // Use project enums instead of #define for ON and OFF.
 
@@ -21,3 +27,7 @@
 #pragma config LVP = OFF        // Low-Voltage Programming Enable (High-voltage on MCLR/VPP must be used for programming)
 
 #define _XTAL_FREQ 8000000
+
+void pic_reg();
+
+#endif  //_PIC16F1829_CONFIG_H
